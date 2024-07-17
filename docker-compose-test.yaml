@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    container_name: test_mysql_db
+    environment:
+      MYSQL_DATABASE: test-api-shop
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+
+    ports:
+      - "3307:3306"
